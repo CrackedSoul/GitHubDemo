@@ -1,9 +1,7 @@
 package cn.mastercom.demo.mongodb.dao.impl;
 
-import java.util.List;
-
-import javax.annotation.Resource;
-
+import cn.mastercom.demo.mongodb.dao.UserDao;
+import cn.mastercom.demo.mongodb.domain.User;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -11,8 +9,8 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
-import cn.mastercom.demo.mongodb.dao.UserDao;
-import cn.mastercom.backstage.domain.User;
+import javax.annotation.Resource;
+import java.util.List;
 
 @Service("userDao")
 public class UserDaoImpl implements UserDao {
