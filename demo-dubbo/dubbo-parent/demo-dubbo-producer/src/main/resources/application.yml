@@ -1,0 +1,9 @@
+dubbo:
+  scan:
+    base-packages: cn.mastercom.demo.dubbo.service.impl
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: zookeeper://192.68.2.90:2181
+
