@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class QueueConsumer {
-	@Async
+	@Async("jieShou")
 	public void consume(String msg) {
 		System.out.println(Thread.currentThread().getName()+"线程：----收到Queue消息，开始异步处理----");
 		System.out.println(msg);
